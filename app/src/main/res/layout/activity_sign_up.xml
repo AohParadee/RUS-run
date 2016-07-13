@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="rus.srithong.paradee.rusrun.SignUpActivity"
-    android:background="@drawable/bg10">
+    android:background="@drawable/wallpapers_a_03">
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
         android:text="@string/signup"
         android:id="@+id/button3"
         android:layout_alignParentBottom="true"
-        android:textColor="@color/text"
+        android:textColor="@android:color/holo_blue_dark"
         android:onClick="clickSignUpSign" />
 
     <LinearLayout
@@ -37,7 +37,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:padding="15dp"
-        android:background="#640b0a0a">
+        android:background="#64a5a5a5">
 
         <LinearLayout
             android:orientation="horizontal"

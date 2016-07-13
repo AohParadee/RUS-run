@@ -14,6 +14,7 @@ public class SignUpActivity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton avata0RadioButton, avata1RadioButton,
             avata2RadioButton, avata3RadioButton, avata4RadioButton;
+    private String nameString, userString, passwordString, avataString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,12 @@ public class SignUpActivity extends AppCompatActivity {
     } // main method
 
     public void clickSignUpSign(View view) {
+
+        // Get Value from Edit Text การเอาค่าจากอีดิเท็กเข้าไปในตัวแปล n
+        nameString = nameEditText.getText().toString().trim();
+        userString = userEditText.getText().toString().trim();
+        passwordString = passwordEditText.getText().toString().trim();
+
 
     }   // clickSignUp
 
