@@ -6,6 +6,7 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.os.AsyncTask;
 import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -142,6 +143,37 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }// onMapReady
 
+    private class CreateMarker extends AsyncTask<Void, Void, String> {
+
+        //Explicit
+        private Context context;
+        private GoogleMap googleMap;
+        private String urlJSON = "http://swiftcodingthai.com/rus/get_user_aoh.php";
+
+        public CreateMarker(Context context, GoogleMap googleMap) {
+            this.context = context;
+            this.googleMap = googleMap;
+        }//Constructor
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            try {
+
+            } catch (Exception e) {
+                return null;
+            }// try
+
+            return null;
+        }// doInBack
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }//onPost
+
+    }// Create Marker Class
+
     private void myLoop() {
         //To Do
         Log.d("RusV3", "latUser ==> " + latUserADouble);
@@ -149,6 +181,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         //Edit Lat, Lng on Server
         editLatLngOnServer();
+
+        //Create Marker
+
 
         //Delay
         Handler handler = new Handler();
